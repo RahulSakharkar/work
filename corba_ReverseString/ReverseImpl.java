@@ -13,3 +13,15 @@ class ReverseImpl extends ReversePOA{
         return (("Server Send : " + str));
     }
 }
+/*	On Terminal-1: 
+		idlj -fall Prime.idl	
+		javac *.java PrimeApp/*.java
+		orbd -ORBInitialPort 1050&
+
+	On Terminal-2: 
+		java Server -ORBInitialPort 1050 -ORBInitialHost localhost&
+
+	On Terminal-3:
+		java Client -ORBInitialPort 1050 -ORBInitialHost localhost
+    
+*/
