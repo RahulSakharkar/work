@@ -4,7 +4,7 @@ On Terminal-1:
 		orbd -ORBInitialPort 1050&
 
 	On Terminal-2: 
-		java Server -ORBInitialPort 1050 -ORBInitialHost localhost&
+		java ReverseServer -ORBInitialPort 1050 -ORBInitialHost localhost&
 
 	On Terminal-3:
-		java Client -ORBInitialPort 1050 -ORBInitialHost localhost
+		java ReverseClient -ORBInitialPort 1050 -ORBInitialHost localhost
