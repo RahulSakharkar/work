@@ -1,6 +1,0 @@
-module PrimeApp{
-    interface Prime{
-        string CheckPrime(in long num);
-        oneway void shutdown();
-    };
-};
