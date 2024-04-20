@@ -8,3 +8,13 @@ On Terminal-1:
 
 	On Terminal-3:
 		java ReverseClient -ORBInitialPort 1050 -ORBInitialHost localhost
+
+
+
+upper case problem statment-
+// Custom input string
+        String str = "Welcome! to Geeksforgeeks";
+ 
+        // Converting above input string to
+        // uppercase letters using UpperCase() method
+        String strup = str.toUpperCase();
