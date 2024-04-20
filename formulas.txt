@@ -1,0 +1,108 @@
+some conversions-
+
+fahrenheit to celsius
+C= (F- 32)*(5/9)
+
+celsius to fahrenheit  
+F=(9/5)*C+32
+
+Miles to KM
+km = M *1.609
+
+Simple interest
+SI= (p*r*t)/100
+
+
+2's power of a number:
+public class PowerOfNumber2 {  
+    public static void main(String[] args) {  
+        int base = 2;  
+        int exponent = 3;  
+        int result = 1;  
+        int power=3;  
+        while (exponent > 0) {  
+            result *= base;  
+            exponent--;  
+        }  
+        System.out.println(base + " raised to the power of " + power + " is " + result);  
+    }  
+}  
+
+OR
+double result = Math.pow(base, exponent); 
+
+
+Compare two strings lexicographically:
+ int result = str1.compareTo(str2);
+
+        // Display the results of the comparison.
+        if (result < 0) {
+            // If the result is less than 0, print that the first string is less than the second.
+            return str2;
+        } else if (result == 0) {
+            // If the result is 0, print that the first string is equal to the second.
+            return "equal");
+        } else { // if (result > 0)
+            // If the result is greater than 0, print that the first string is greater than the second.
+            return str1;
+        }
+
+OR
+
+// This method compares two strings  
+    // lexicographically without using  
+    // library functions  
+    public static int stringCompare(String str1,  
+                                    String str2)  
+    {  
+        for (int i = 0; i < str1.length() &&  
+                    i < str2.length(); i++) {  
+            if ((int)str1.charAt(i) ==  
+                (int)str2.charAt(i)) {  
+                continue;  
+            }  
+            else {  
+                return (int)str1.charAt(i) -  
+                    (int)str2.charAt(i);  
+            }  
+        }  
+  
+        // Edge case for strings like  
+        // String 1="Geeky" and String 2="Geekyguy"  
+        if (str1.length() < str2.length()) {  
+            return (str1.length()-str2.length());  
+        }  
+        else if (str1.length() > str2.length()) {  
+            return (str1.length()-str2.length());  
+        }  
+          
+        // If none of the above conditions is true,  
+        // it implies both the strings are equal  
+        else {  
+            return 0;  
+        }  
+    }  
+
+Counting vowels in a word:
+        String str = "GeeksForGeeks";
+        str = str.toLowerCase();
+        int count = 0;
+ 
+        for (int i = 0; i < str.length(); i++) {
+            // check if char[i] is vowel
+            if (str.charAt(i) == 'a' || str.charAt(i) == 'e'
+                || str.charAt(i) == 'i'
+                || str.charAt(i) == 'o'
+                || str.charAt(i) == 'u') {
+                // count increments if there is vowel in
+                // char[i]
+                count++;
+            }
+        }
+
+Factorial of a number:
+int i,fact=1;  
+  int number=5;//It is the number to calculate factorial    
+  for(i=1;i<=number;i++){    
+      fact=fact*i;    
+  }   
