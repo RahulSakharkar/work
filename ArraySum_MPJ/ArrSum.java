@@ -80,7 +80,9 @@ public class ArrSum {
 
 
 
-// to run
+// to run put uncompressed mpj folder in root assignment folder
+// export MPJ_HOME=./mpjfoldername/
+// export PATH=$MPJ_HOME/bin:$PATH
 // javac -cp $MPJ_HOME/lib/mpj.jar ArrSum.java
 // $MPJ_HOME/bin/mpjrun.sh -np 4 ArrSum
 
